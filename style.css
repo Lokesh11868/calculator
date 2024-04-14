@@ -1,0 +1,81 @@
+body{
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+    display: flex;
+    justify-content: center;
+}
+
+#display{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(0, 0, 0);
+    border-radius: 40px;
+    border: none;
+    font-size: 60px;
+    color: beige;  
+                        
+}
+input{
+    text-align: end;
+}
+#calculator{
+    width:28%;
+    height:97vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px rgb(63, 63, 63);
+}
+#content{
+    padding: 10px;
+    display:block;
+}
+#keys{
+    padding-left: 20px;
+    padding-top: 5px; 
+    padding-bottom: 10px; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    row-gap: 10px; 
+    
+}
+.button0{
+    grid-column: 1 / span 2;
+    border-radius: 40px;
+    text-align: start;
+    padding-left: 30px;
+    width: 156px;
+}
+button{
+    width:64px;
+    height:64px;
+    border-radius: 32px;
+    border:none;
+    font-size:x-large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(75, 75, 75);
+    
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+}
+.fade{
+    color: black;
+    background-color: rgb(189, 189, 189);
+}
+.orange{
+    background-color: orange;
+}
+@media screen and (max-width: 600px) {
+    #calculator {
+        width: 90%;
+        max-width: none;
+    }
+    #keys {
+        padding-left: 5px;
+    }
+    button {
+        font-size: large;
+    }
+}
